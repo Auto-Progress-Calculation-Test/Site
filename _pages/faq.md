@@ -22,6 +22,8 @@ layout: page
 
 - [What do each of the three tiers mean?](#what-do-each-of-the-three-tiers-mean)
 
+- [How has progress been calculated on the website?](#how-has-progress-been-calculated-on-the-website)
+
 ## How often will new data be added to this site?
 We will add data as soon as it has been sourced and checked. This includes new data as well as updates to data we have already published. We will continue to collect data from existing sources where possible.
 
@@ -63,6 +65,13 @@ Each of the SDG indicators are assigned to one (or more) of the following tiers:
  - **Tier 3:** No internationally established methodology or standards are yet available for the indicator, but methodology/standards are being (or will be) developed or tested (As of the 51st session of the UN Statistical Commission, the global indicator framework does not contain any Tier III indicators)
 
 **As of 28 December 2020:** The updated tier classification contains **130 Tier I indicators**, **97 Tier II indicators** and **4 indicators that have multiple tiers** (different components of the indicator are classified into different tiers).
+
+## How has progress been calculated on the website?
+The Global Indicator Framework (GIF) lays the foundation for countries to measure and report their progress towards the 17 SDGs. The GIF divides the 17 SDGs across 169 targets and 234 unique indicators, all of which were agreed upon and are measured consistently by all United Nations Member States. Across the GIF, indicators may have defined quantitative targets (e.g., GIF 1.2 targets a 50% reduction of the poverty rate according to national definitions), aspirational targets (e.g., GIF target 16.5 *Substantially reduce corruption and bribery in all their forms*), or no target at all.
+
+To complement the GIF and their own set of National indicators, Statistics Canada developed a robust and simple method of measuring progress which can be reported using visualizations that allow data users to easily see areas of progress or weakness. This method has been integrated into Open SDG for all it’s organisational users to make use of, including this platform. Even in the absence of specific quantitative targets, an estimate of progress can inform whether undesired trends are being observed by reporting progress deterioration. In essence, this measure of progress provides a simplified illustration of a country’s progress towards achieving the SDGs, assuming that the current trends are maintained.
+
+For a full breakdown of the methodology and supplementary information, [see the Progress Methodology Summary Page here](https://open-sdg.readthedocs.io/en/latest/progress-methodology/).
 
 For more information, [see the IAEG-SDGs Tier Classification for Global SDG Indicators](https://unstats.un.org/sdgs/iaeg-sdgs/tier-classification/)
 
