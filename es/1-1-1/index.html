@@ -147,7 +147,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/Site/assets/css/style.css?v=20251118223726">
+        <link rel="stylesheet" href="/Site/assets/css/style.css?v=20251205134632">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -434,9 +434,13 @@ data-event-label="high"
         <div class="progress-status">
         
             <div class="progress-status-label">
-                No hay datos
+                Objetivo alcanzado
             </div>
         
+        
+            <div class="progress-status-image">
+                <img src="/Site/assets/img/progress/target-achieved-gauge.png" alt="Objetivo alcanzado" />
+            </div>
         
         </div>
     
@@ -474,7 +478,7 @@ data-event-label="high"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Año&quot;},{&quot;name&quot;:&quot;SERIES&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;SI_POV_DAY1&quot;,&quot;&quot;]},&quot;title&quot;:&quot;SERIES&quot;},{&quot;name&quot;:&quot;REF_AREA&quot;,&quot;type&quot;:&quot;number&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;&quot;]},&quot;title&quot;:&quot;REF_AREA&quot;},{&quot;name&quot;:&quot;URBANISATION&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;R&quot;,&quot;U&quot;,&quot;&quot;]},&quot;title&quot;:&quot;URBANISATION&quot;},{&quot;name&quot;:&quot;UNIT_MEASURE&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;PT&quot;,&quot;&quot;]},&quot;title&quot;:&quot;UNIT_MEASURE&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Año&quot;},{&quot;name&quot;:&quot;URBANISATION&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;R&quot;,&quot;U&quot;,&quot;&quot;]},&quot;title&quot;:&quot;URBANISATION&quot;},{&quot;name&quot;:&quot;Group&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;A&quot;,&quot;B&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Group&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
   data-proxy=""
@@ -509,15 +513,71 @@ data-event-label="high"
   <div id="datatables">
 
     
+    <a role="button" href="https://auto-progress-calculation-test.github.io/Data/es/headline/1-1-1.csv" class="btn btn-primary btn-download" download="indicator_1-1-1.csv" tabindex="0" role="button">Descargar los datos de los titulares (.csv)</a>
+    
     <a role="button" href="https://auto-progress-calculation-test.github.io/Data/es/data/1-1-1.csv" class="btn btn-primary btn-download" download='indicator_1-1-1.csv' tabindex='0' role='button'>Descargar datos de origen (.csv)</a>
 
     <p class="no-js-disaggregation-hint">Descargar los datos de origen para los desgloses (.csv)</p>
 
     
-    <h3>No hay datos principales disponibles</h3>
+    <h3>Datos principales</h3>
+    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
+      <caption>Proporción de la población que vive por debajo del umbral internacional de pobreza, desglosada por sexo, edad, situación laboral y ubicación geográfica (urbana o rural)</caption>
+      <thead>
+        
+        
+        <th scope="col">Year</th>
+        
+        
+        
+        <th scope="col" class="table-value">Value</th>
+        
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td class="table-value">2.0</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td class="table-value">2.0</td>
+          
+          
+        </tr>
+        
+      </tbody>
+    </table>
     
   </div>
 
+  
+  <div id="datatableFooter">
+    
+    
+    <p>Área geográfica: </p>
+    
+    
+    <p>Unidad de medida: </p>
+    
+    
+    <p>Nota: </p>
+    
+  </div>
   
 
 </div>
@@ -847,51 +907,18 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-      
-      <tr>
-        <th scope="row">Objetivo </th>
-        <td>
-          
-            <p>Meta 1: Poner fin a la pobreza en todas sus formas y en todo el mundo</p>
-
-          
-        </td>
-        </tr>
         
-      
-  
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Meta </th>
-        <td>
           
-            <p>Objetivo 1.1: De aquí a 2030, erradicar para todas las personas y en todo el mundo la pobreza extrema (actualmente se considera que sufren pobreza extrema las personas que viven con menos de 1,25 dólares de los Estados Unidos al día)</p>
-
-          
-        </td>
-        </tr>
+      
+      
+      
         
-      
-  
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Indicador </th>
-        <td>
           
-            <p>Indicador 1.1.1: Proporción de la población que vive por debajo del umbral de pobreza internacional por sexo, edad, situación laboral y ubicación geográfica (urbana/rural)</p>
-
-          
-        </td>
-        </tr>
+      
+      
+      
         
-      
-  
+          
       
       
       
@@ -955,25 +982,8 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-      
-      <tr>
-        <th scope="row">Definición y conceptos </th>
-        <td>
-          
-            <h2 id="definición">Definición:</h2>
-<p>El indicador “proporción de la población por debajo del umbral de pobreza internacional” se define como el porcentaje de la población que vive con menos de 1,90 dólares al día a precios internacionales de 2011. La línea de pobreza internacional se fija actualmente en 1,90 dólares al día a precios internacionales de 2011.</p>
-
-<h2 id="conceptos">Conceptos:</h2>
-<p>Al evaluar la pobreza en un país determinado y la mejor manera de reducirla, naturalmente uno se enfoca en una línea de pobreza que se considera apropiada para ese país. Pero, ¿cómo hablamos de manera significativa sobre “la pobreza global”? Las líneas de pobreza entre países varían en términos de su poder adquisitivo y tienen un fuerte gradiente económico, de modo que los países más ricos tienden a adoptar niveles de vida más altos al definir la pobreza. Pero para medir consistentemente la pobreza absoluta global en términos de consumo, necesitamos tratar a dos personas con el mismo poder adquisitivo sobre los productos básicos de la misma manera - ambos son pobres o no lo son - incluso si viven en países diferentes.</p>
-
-<p>Desde el Informe sobre el desarrollo mundial de 1990, el Banco Mundial se ha propuesto aplicar un estándar común para medir la pobreza extrema, anclado en lo que significa la pobreza en los países más pobres del mundo. El bienestar de las personas que viven en diferentes países se puede medir en una escala común ajustando las diferencias en el poder adquisitivo de las monedas. Para el Informe sobre el desarrollo mundial de 1990, se eligió el estándar de 1 dólar al día, medido a precios internacionales de 1985 y ajustado a la moneda local mediante PPA, porque era típico de las líneas de pobreza de los países de bajos ingresos en ese momento. A medida que evolucionan las diferencias en el costo de vida en todo el mundo, la línea de pobreza internacional debe actualizarse periódicamente utilizando nuevos datos de precios de PPA para reflejar estos cambios. El último cambio fue en octubre de 2015, cuando el Banco Mundial adoptó $ 1,90 como línea de pobreza internacional utilizando la PPA de 2011. Antes de eso, la actualización de 2008 estableció la línea de pobreza internacional en $ 1,25 utilizando la PPA de 2005. Las medidas de pobreza basadas en líneas de pobreza internacionales intentan mantener constante el valor real de la línea de pobreza en todos los países, como se hace al hacer comparaciones en el tiempo. Las primeras ediciones de los Indicadores de desarrollo mundial (WDI) del Banco Mundial’ utilizaban las PPA de las Penn World Tables para convertir los valores en moneda local al poder adquisitivo equivalente medido en dólares estadounidenses. En ediciones posteriores se utilizaron estimaciones de la PPA de consumo de 1993, 2005 y 2011 elaboradas por el Programa de Comparación Internacional (PCI) del Banco Mundial’.</p>
-
-          
-        </td>
-        </tr>
         
-      
-  
+          
       
       
       
@@ -1211,85 +1221,28 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-      
-      <tr>
-        <th scope="row">Indicador </th>
-        <td>
-          
-            <p>Indicator 1.1.1: Proportion of the population living below the international poverty line by sex, age, employment status and geographic location (urban/rural)</p>
-
-          
-        </td>
-        </tr>
         
-      
-  
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Meta </th>
-        <td>
           
-            <p>Target 1.1: By 2030, eradicate extreme poverty for all people everywhere, currently measured as people living on less than $1.25 a day</p>
-
-          
-        </td>
-        </tr>
+      
+      
+      
         
-      
-  
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Actualización de metadatos </th>
-        <td>
           
-            <p>2025-08-14</p>
-
-          
-        </td>
-        </tr>
+      
+      
+      
         
-      
-  
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Organizaciones internacionales responsables del seguimiento global </th>
-        <td>
           
-            <p>World Bank (WB)</p>
-
-          
-        </td>
-        </tr>
+      
+      
+      
         
-      
-  
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Indicadores relacionados </th>
-        <td>
           
-            <p>1.2.1: Proportion of population living below the national poverty line, by sex and age</p>
-<p>10.1.1: Growth rates of household expenditure or income per capita among the bottom 40 per cent of the population and the total population</p>
-<p>10.2.1 Proportion of people living below 50 per cent of median income, by sex, age and persons with disabilities</p>
-
-          
-        </td>
-        </tr>
+      
+      
+      
         
-      
-  
+          
   
   
   
@@ -1538,12 +1491,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Buscar';</script>
 
-<script src='/Site/assets/js/sdg.js?v=20251118223726'></script>
+<script src='/Site/assets/js/sdg.js?v=20251205134632'></script>
 
 
     
     
-    <script src="/Site/assets/js/custom.js?v=20251118223726"></script><script>
+    <script src="/Site/assets/js/custom.js?v=20251205134632"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
